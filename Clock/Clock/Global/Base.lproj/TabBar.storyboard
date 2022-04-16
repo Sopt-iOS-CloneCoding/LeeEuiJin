@@ -3,95 +3,77 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--알람-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="Clock" id="BYZ-38-t0r" customClass="ViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="알람" image="alarm" catalog="system" selectedImage="alarm.fill" id="jiw-73-R01"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="214" y="825"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Bhy-8X-NAo">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZFq-LY-cOx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dke-b3-RyV">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="network" catalog="system" id="dke-b3-RyV">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="m7Q-Xx-gEp"/>
+                        <segue destination="kyZ-Ka-dXZ" kind="relationship" relationship="viewControllers" id="emy-z0-C1X"/>
+                        <segue destination="u4e-un-fnI" kind="relationship" relationship="viewControllers" id="AL5-mB-C4l"/>
+                        <segue destination="aHe-A7-VU2" kind="relationship" relationship="viewControllers" id="cXI-a2-KtE"/>
+                        <segue destination="hUZ-nS-e1V" kind="relationship" relationship="viewControllers" id="eGJ-ES-4db"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7O-9Z-Pox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="657" y="6"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cw9-YK-X7L">
+        <!--WorldClock-->
+        <scene sceneID="UHn-Pu-0kg">
             <objects>
-                <viewController storyboardIdentifier="WorldClock" id="5Op-Uu-EGl" customClass="ViewController" customModule="WorldClock" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ckJ-gV-tma">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="R55-pT-yPy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kd9-5w-aun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="WorldClock" id="kyZ-Ka-dXZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="JJL-qm-EdX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyZ-4v-sDC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580" y="825"/>
+            <point key="canvasLocation" x="121" y="419"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dJo-oV-Eky">
+        <!--Alarm-->
+        <scene sceneID="boq-Y4-gTZ">
             <objects>
-                <viewController storyboardIdentifier="StopWatch" id="Btq-II-yEq" customClass="ViewController" customModule="StopWatch" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qGj-hc-QzH">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="S3Y-ig-2Jb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HMO-HD-V2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Alarm" id="u4e-un-fnI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kce-c5-Kop"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myl-R5-HqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="825"/>
+            <point key="canvasLocation" x="482" y="472"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="wJd-sX-5eC">
+        <!--Timer-->
+        <scene sceneID="Uh2-oZ-psG">
             <objects>
-                <viewController storyboardIdentifier="Timer" id="Bob-AB-Pdi" customClass="ViewController" customModule="Timer" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kNz-N7-gj8">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="bPy-Wb-na2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nat-AQ-hIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Timer" id="hUZ-nS-e1V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vHQ-kJ-H5m"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rb5-rh-Jjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="825"/>
+            <point key="canvasLocation" x="1250" y="419"/>
+        </scene>
+        <!--StopWatch-->
+        <scene sceneID="sYf-9P-ixB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StopWatch" id="aHe-A7-VU2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="yEX-69-Bo7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Np-1O-dM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="471"/>
         </scene>
     </scenes>
     <resources>
-        <image name="alarm" catalog="system" width="124" height="128"/>
-        <image name="alarm.fill" catalog="system" width="124" height="128"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="network" catalog="system" width="128" height="121"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

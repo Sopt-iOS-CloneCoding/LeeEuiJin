@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B2DC95A280ADA0C00F7AFE1 /* StopWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DC959280ADA0C00F7AFE1 /* StopWatch.storyboard */; };
+		9B2DC95C280ADA1600F7AFE1 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DC95B280ADA1600F7AFE1 /* Timer.storyboard */; };
+		9B2DC95E280ADA2200F7AFE1 /* WorldClock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DC95D280ADA2200F7AFE1 /* WorldClock.storyboard */; };
+		9B2DC960280ADA9200F7AFE1 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DC95F280ADA9200F7AFE1 /* Alarm.storyboard */; };
+		9B4C9428280AEE3800AF81A1 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C9427280AEE3800AF81A1 /* AlarmViewController.swift */; };
 		9B7C781528093BC600061A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C781428093BC600061A1C /* AppDelegate.swift */; };
 		9B7C781728093BC600061A1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C781628093BC600061A1C /* SceneDelegate.swift */; };
-		9B7C781928093BC600061A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C781828093BC600061A1C /* ViewController.swift */; };
-		9B7C781C28093BC600061A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C781A28093BC600061A1C /* Main.storyboard */; };
+		9B7C781928093BC600061A1C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C781828093BC600061A1C /* TabBar.swift */; };
+		9B7C781C28093BC600061A1C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C781A28093BC600061A1C /* TabBar.storyboard */; };
 		9B7C781E28093BC700061A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C781D28093BC700061A1C /* Assets.xcassets */; };
 		9B7C782128093BC700061A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C781F28093BC700061A1C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B2DC959280ADA0C00F7AFE1 /* StopWatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StopWatch.storyboard; sourceTree = "<group>"; };
+		9B2DC95B280ADA1600F7AFE1 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		9B2DC95D280ADA2200F7AFE1 /* WorldClock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorldClock.storyboard; sourceTree = "<group>"; };
+		9B2DC95F280ADA9200F7AFE1 /* Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
+		9B4C9427280AEE3800AF81A1 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		9B7C781128093BC600061A1C /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7C781428093BC600061A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B7C781628093BC600061A1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B7C781828093BC600061A1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B7C781B28093BC600061A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B7C781828093BC600061A1C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		9B7C781B28093BC600061A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		9B7C781D28093BC700061A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B7C782028093BC700061A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B7C782228093BC700061A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +47,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B2DC9532809422000F7AFE1 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DC95D280ADA2200F7AFE1 /* WorldClock.storyboard */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		9B2DC9542809423600F7AFE1 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DC95F280ADA9200F7AFE1 /* Alarm.storyboard */,
+				9B4C9427280AEE3800AF81A1 /* AlarmViewController.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		9B2DC9552809424500F7AFE1 /* StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DC959280ADA0C00F7AFE1 /* StopWatch.storyboard */,
+			);
+			path = StopWatch;
+			sourceTree = "<group>";
+		};
+		9B2DC9562809425100F7AFE1 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DC95B280ADA1600F7AFE1 /* Timer.storyboard */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		9B2DC957280943AA00F7AFE1 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				9B7C781428093BC600061A1C /* AppDelegate.swift */,
+				9B7C781628093BC600061A1C /* SceneDelegate.swift */,
+				9B7C781A28093BC600061A1C /* TabBar.storyboard */,
+				9B7C781D28093BC700061A1C /* Assets.xcassets */,
+				9B7C781F28093BC700061A1C /* LaunchScreen.storyboard */,
+				9B7C781828093BC600061A1C /* TabBar.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		9B2DC958280943DD00F7AFE1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DC9562809425100F7AFE1 /* Timer */,
+				9B2DC9552809424500F7AFE1 /* StopWatch */,
+				9B2DC9542809423600F7AFE1 /* Alarm */,
+				9B2DC9532809422000F7AFE1 /* WorldClock */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		9B7C780828093BC600061A1C = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +123,9 @@
 		9B7C781328093BC600061A1C /* Clock */ = {
 			isa = PBXGroup;
 			children = (
-				9B7C781428093BC600061A1C /* AppDelegate.swift */,
-				9B7C781628093BC600061A1C /* SceneDelegate.swift */,
-				9B7C781828093BC600061A1C /* ViewController.swift */,
-				9B7C781A28093BC600061A1C /* Main.storyboard */,
-				9B7C781D28093BC700061A1C /* Assets.xcassets */,
-				9B7C781F28093BC700061A1C /* LaunchScreen.storyboard */,
 				9B7C782228093BC700061A1C /* Info.plist */,
+				9B2DC958280943DD00F7AFE1 /* Screen */,
+				9B2DC957280943AA00F7AFE1 /* Global */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -125,9 +188,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2DC95C280ADA1600F7AFE1 /* Timer.storyboard in Resources */,
+				9B2DC95A280ADA0C00F7AFE1 /* StopWatch.storyboard in Resources */,
 				9B7C782128093BC700061A1C /* LaunchScreen.storyboard in Resources */,
+				9B2DC960280ADA9200F7AFE1 /* Alarm.storyboard in Resources */,
 				9B7C781E28093BC700061A1C /* Assets.xcassets in Resources */,
-				9B7C781C28093BC600061A1C /* Main.storyboard in Resources */,
+				9B2DC95E280ADA2200F7AFE1 /* WorldClock.storyboard in Resources */,
+				9B7C781C28093BC600061A1C /* TabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7C781928093BC600061A1C /* ViewController.swift in Sources */,
+				9B4C9428280AEE3800AF81A1 /* AlarmViewController.swift in Sources */,
+				9B7C781928093BC600061A1C /* TabBar.swift in Sources */,
 				9B7C781528093BC600061A1C /* AppDelegate.swift in Sources */,
 				9B7C781728093BC600061A1C /* SceneDelegate.swift in Sources */,
 			);
@@ -147,12 +215,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B7C781A28093BC600061A1C /* Main.storyboard */ = {
+		9B7C781A28093BC600061A1C /* TabBar.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9B7C781B28093BC600061A1C /* Base */,
 			);
-			name = Main.storyboard;
+			name = TabBar.storyboard;
 			sourceTree = "<group>";
 		};
 		9B7C781F28093BC700061A1C /* LaunchScreen.storyboard */ = {
@@ -292,7 +360,7 @@
 				INFOPLIST_FILE = Clock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +388,7 @@
 				INFOPLIST_FILE = Clock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
