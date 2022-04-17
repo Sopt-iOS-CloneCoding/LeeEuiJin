@@ -7,26 +7,30 @@
 
 import UIKit
 
-class AlarmViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AlarmViewController: UIViewController {
     
     @IBOutlet weak var alarmTableView: UITableView!
+    var tableViewItems = ["item1", "item2", "item3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        alarmTableView.delegate = self
         alarmTableView.dataSource = self
 
     }
+}
+
+extension AlarmViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return tableViewItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "myCell")
-        cell.textLabel?.text = "Hello World"
+        let cell = alarmTableView.dequeueReusableCell(withIdentifier: "alarmTableCell", for: indexPath)
+        cell.textLabel?.text = tableViewItems[indexPath.row]
         return cell
     }
+    
 
 
 }
